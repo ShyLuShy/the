@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">four in row</string>
+    <string name="main">Справочник по игре "Escape from Tarkov</string>
+    <string name="startButton">начать</string>
+
+    <string name="gameplay_guide">Ведение боя</string>
+    <string name="inventory_guide">Инвентарь</string>
+    <string name="shelter">Убежище</string>
+    <string name="Weapons">Оружие</string>
+    <string name="Equipment">Снаряжение</string>
+    <string name="Loot">Лут</string>
+    <string name="Bullets">Патроны</string>
+    <string name="Traders">Торговцы</string>
+    <string name="Medecine">Медикаменты</string>
+    <string name="Maps">Карты</string>
+    <string name="info">О программе</string>
+
+</resources>
