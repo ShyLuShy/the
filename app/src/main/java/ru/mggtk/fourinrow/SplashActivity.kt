@@ -1,15 +1,18 @@
 package ru.mggtk.fourinrow
 
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.graphics.drawable.Animatable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
+import android.view.animation.LinearInterpolator
 import android.widget.ImageView
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        val SPLASH_DISPLAY_LENGTH = 1500L
+        val SPLASH_DISPLAY_LENGTH = 1000L
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
@@ -33,5 +36,13 @@ class SplashActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }, SPLASH_DISPLAY_LENGTH)
+
+
+        ObjectAnimator.ofFloat(animation, View.ROTATION_Y,0f,360f).apply{
+            duration = 1000
+            interpolator = LinearInterpolator()
+            repeatCount = 1
+            start()
+        }
     }
 }

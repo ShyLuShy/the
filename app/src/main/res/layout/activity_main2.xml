@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    tools:context=".MainActivity2">
+
+    <TextView
+
+        android:id="@+id/textShelter"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/dark_light_gray"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/Shelter"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnShelter"
+        app:layout_constraintStart_toStartOf="@+id/btnShelter"
+        app:layout_constraintTop_toBottomOf="@+id/btnShelter" />
+
+    <TextView
+
+        android:id="@+id/textMedicine"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="108dp"
+        android:background="@color/dark_light_gray"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/Medicine"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textBack"
+        app:layout_constraintEnd_toEndOf="@+id/btnMedicine"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnMedicine" />
+
+    <TextView
+
+        android:id="@+id/textFraction"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="108dp"
+        android:background="@color/dark_light_gray"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/Fraction"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textBack"
+        app:layout_constraintEnd_toEndOf="@+id/btnFraction"
+        app:layout_constraintStart_toStartOf="@+id/btnFraction" />
+
+    <TextView
+
+        android:id="@+id/textTrader"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@color/dark_light_gray"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/Trader"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnTrader"
+        app:layout_constraintStart_toStartOf="@+id/btnTrader"
+        app:layout_constraintTop_toBottomOf="@+id/btnTrader" />
+
+    <ImageButton
+        android:onClick="onClick"
+        android:id="@+id/btnShelter"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/dark_light_gray"
+        android:contentDescription="Описание убежища"
+        android:scaleType="centerCrop"
+        android:src="@drawable/eft_shelter"
+        app:layout_constraintEnd_toEndOf="@+id/textMain2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textMain2"
+        app:layout_constraintTop_toBottomOf="@+id/textMain2" />
+
+    <ImageButton
+        android:id="@+id/btnMedicine"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/dark_light_gray"
+        android:contentDescription="Описание медикаментов"
+        android:scaleType="centerCrop"
+        android:src="@drawable/eft_medicine"
+        app:layout_constraintBottom_toTopOf="@+id/textMedicine"
+        app:layout_constraintEnd_toEndOf="@+id/textShelter"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textShelter"
+        app:layout_constraintTop_toBottomOf="@+id/textShelter"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnFraction"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/dark_light_gray"
+        android:contentDescription="Описание фракций"
+        android:scaleType="centerCrop"
+        android:src="@drawable/eft_fraction"
+        app:layout_constraintBottom_toTopOf="@+id/textFraction"
+        app:layout_constraintEnd_toEndOf="@+id/textTrader"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textTrader"
+        app:layout_constraintTop_toBottomOf="@+id/textTrader"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btnTrader"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/dark_light_gray"
+        android:contentDescription="Описание торговцев"
+        android:scaleType="centerCrop"
+        android:src="@drawable/eft_trader"
+        app:layout_constraintEnd_toEndOf="@+id/textMain2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textMain2"
+        app:layout_constraintTop_toBottomOf="@+id/textMain2" />
+
+    <TextView
+        android:id="@+id/textBack"
+        android:layout_width="110sp"
+        android:layout_height="48sp"
+        android:background="@color/dark_light_gray"
+        android:clickable="true"
+        android:fontFamily="sans-serif-light"
+        android:onClick="onClick"
+        android:text="@string/Back"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+
+        android:id="@+id/textMain2"
+        android:layout_width="340dp"
+        android:layout_height="90dp"
+
+        android:layout_marginTop="28dp"
+        android:background="@color/light_gray"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/main"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

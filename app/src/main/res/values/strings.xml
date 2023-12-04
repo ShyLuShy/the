@@ -1,18 +1,22 @@
 <resources>
-    <string name="app_name">four in row</string>
+    <string name="app_name">Escape from Tarkov Guide</string>
     <string name="main">Справочник по игре "Escape from Tarkov</string>
     <string name="startButton">начать</string>
+    <string name="fight">Ведение боя</string>
+    <string name="About">Информация о программе</string>
+    <string name="AboutText">Программа разработана\n в рамках учебной практики в МГГТК ФГБОУ ВО «АГУ» \n\n Выполнил: Ефименко Максим</string>
 
-    <string name="gameplay_guide">Ведение боя</string>
-    <string name="inventory_guide">Инвентарь</string>
-    <string name="shelter">Убежище</string>
-    <string name="Weapons">Оружие</string>
-    <string name="Equipment">Снаряжение</string>
+
+    <string name="Next">Далее</string>
+    <string name="Back">Назад</string>
+    <string name="Inventory">Инвентарь</string>
+    <string name="Shelter">Убежище</string>
     <string name="Loot">Лут</string>
-    <string name="Bullets">Патроны</string>
-    <string name="Traders">Торговцы</string>
-    <string name="Medecine">Медикаменты</string>
+    <string name="Fraction">Фракции</string>
+    <string name="Trader">Торговцы</string>
+    <string name="Medicine">Медицина</string>
     <string name="Maps">Карты</string>
-    <string name="info">О программе</string>
+    <string name="Info">О программе</string>
+
 
 </resources>
