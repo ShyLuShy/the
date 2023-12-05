@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainColor"
+    android:background="@drawable/frame1"
     android:hapticFeedbackEnabled="true"
     android:visibility="visible"
     tools:context=".MainActivity">
 
     <ImageButton
-        android:clickable="true"
         android:id="@+id/btnMaps"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="20dp"
         android:background="@color/dark_light_gray"
+        android:clickable="true"
         android:contentDescription="btnMaps"
         android:onClick="onClick"
         android:scaleType="centerCrop"
@@ -42,12 +42,12 @@
         app:layout_constraintTop_toBottomOf="@+id/btnMaps" />
 
     <ImageButton
-        android:onClick="onClick"
         android:id="@+id/btnFight"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@color/dark_light_gray"
         android:contentDescription="Помощь в ведении боя"
+        android:onClick="onClick"
         android:scaleType="centerCrop"
         android:src="@drawable/eft_fight"
         app:layout_constraintBottom_toTopOf="@+id/textFight"
@@ -74,12 +74,12 @@
         app:layout_constraintStart_toStartOf="@+id/btnFight" />
 
     <ImageButton
-        android:onClick="onClick"
         android:id="@+id/bthLoot"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:background="@color/dark_light_gray"
         android:contentDescription="Описание всего лута"
+        android:onClick="onClick"
         android:scaleType="centerCrop"
         android:src="@drawable/eft_loot"
         app:layout_constraintBottom_toTopOf="@+id/textLoot"
@@ -106,13 +106,13 @@
         app:layout_constraintStart_toStartOf="@+id/bthLoot" />
 
     <ImageButton
-        android:onClick="onClick"
         android:id="@+id/btnInventory"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="20dp"
         android:background="@color/dark_light_gray"
         android:contentDescription="Описание элементов инвентаря"
+        android:onClick="onClick"
         android:scaleType="centerCrop"
         android:src="@drawable/eft_inventory"
         app:layout_constraintEnd_toEndOf="@+id/textMain"
@@ -135,14 +135,13 @@
         app:layout_constraintTop_toBottomOf="@+id/btnInventory" />
 
     <TextView
-
         android:id="@+id/textMain"
         android:layout_width="340dp"
+
         android:layout_height="90dp"
         android:layout_marginTop="28dp"
-        android:background="@color/light_gray"
-
-        android:fontFamily="sans-serif-light"
+        android:background="@color/dark_light_gray"
+        android:fontFamily="sans-serif"
         android:text="@string/main"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -159,9 +158,10 @@
         android:layout_marginBottom="20dp"
         android:clickable="true"
         android:onClick="onClick"
+        android:padding="1dp"
         android:text="@string/Info"
         android:textAlignment="center"
-        android:textColor="@color/dark_light_gray"
+        android:textColor="@color/light_gray"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

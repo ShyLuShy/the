@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.core.content.ContextCompat
 import android.content.Intent
+import android.os.Build
 import android.view.View
 import android.widget.ImageButton
 import android.widget.TextView
@@ -17,6 +18,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.statusBarColor = ContextCompat.getColor(this, R.color.light_black)
+        }
 
         // Переход в MainActivity2
         val textNext: TextView = findViewById(R.id.textNext)
@@ -63,7 +69,8 @@ class MainActivity : AppCompatActivity() {
     private fun showAboutDialog(context: Context) {
         val builder = AlertDialog.Builder(context)
         builder.setTitle("О программе")
-        val message = "Программа разработана\n в рамках учебной практики в МГГТК ФГБОУ ВО «АГУ» \n\n Выполнил: Ефименко Максим"
+        val message = "Программа разработана\n в рамках учебной практики в " +
+                "МГГТК ФГБОУ ВО «АГУ» \n\n Выполнил: Ефименко Максим"
         builder.setMessage(message)
 
         builder.setPositiveButton("Закрыть") { dialog, which ->

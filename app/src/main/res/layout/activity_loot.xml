@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainColor"
+    android:background="@drawable/frame1"
     tools:context=".LootActivity">
 
     <TextView
@@ -100,7 +100,7 @@
         android:layout_marginTop="35dp"
         android:layout_marginEnd="6dp"
         android:layout_marginBottom="661dp"
-        android:background="@color/light_gray"
+        android:background="@color/dark_light_gray"
         android:text="@string/Loot"
         android:textAlignment="center"
         android:textColor="@color/white"
