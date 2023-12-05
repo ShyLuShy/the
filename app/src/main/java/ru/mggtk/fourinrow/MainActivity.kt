@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         val message = "Программа разработана\n в рамках учебной практики в МГГТК ФГБОУ ВО «АГУ» \n\n Выполнил: Ефименко Максим"
         builder.setMessage(message)
 
-        builder.setPositiveButton("закрыть") { dialog, which ->
+        builder.setPositiveButton("Закрыть") { dialog, which ->
             dialog.dismiss()
         }
         val dialog = builder.create()

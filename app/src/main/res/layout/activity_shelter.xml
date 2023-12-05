@@ -8,6 +8,81 @@
     tools:context=".ShelterActivity">
 
     <TextView
+        android:id="@+id/textBack8"
+        android:layout_width="110sp"
+        android:layout_height="48sp"
+        android:background="@color/dark_light_gray"
+        android:clickable="true"
+        android:fontFamily="sans-serif-light"
+        android:onClick="onClick"
+        android:text="@string/Back"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ScrollView
+        android:layout_width="320dp"
+        android:layout_height="550dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewShelter"
+        app:layout_constraintVertical_bias="0.13999999">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Убежище_2"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:lineSpacingExtra="6sp"
+                android:text="@string/Убежище_1"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Лут_3"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/loot_shelter" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
         android:id="@+id/textViewShelter"
         android:layout_width="340dp"
         android:layout_height="35dp"

@@ -8,6 +8,25 @@
     tools:context=".MapsActivity">
 
     <TextView
+        android:id="@+id/textBack6"
+        android:layout_width="110sp"
+        android:layout_height="48sp"
+        android:background="@color/dark_light_gray"
+        android:clickable="true"
+        android:fontFamily="sans-serif-light"
+        android:onClick="onClick"
+        android:text="@string/Back"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
         android:id="@+id/textViewMaps"
         android:layout_width="340dp"
         android:layout_height="35dp"
@@ -24,4 +43,168 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="320dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaps"
+        app:layout_constraintVertical_bias="0.13999999">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTamojnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Таможня"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageTamozhnya"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                app:srcCompat="@drawable/map_tamozhnya" />
+
+            <TextView
+                android:id="@+id/textSkip1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textZavod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Завод"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageZavod"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                app:srcCompat="@drawable/map_zavod" />
+
+            <TextView
+                android:id="@+id/textSkip2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textBereg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Берег"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageBereg"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                app:srcCompat="@drawable/map_bereg" />
+
+            <TextView
+                android:id="@+id/textSkip3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textLes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Лес"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageLes"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                app:srcCompat="@drawable/map_les" />
+
+            <TextView
+                android:id="@+id/textSkip4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textMayak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Маяк"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageMayak"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:rotation="0"
+                android:rotationX="0"
+                android:rotationY="0"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/map_mayak" />
+
+            <TextView
+                android:id="@+id/textSkip5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textRazvyazka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Развязка"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageRazvyazka"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                app:srcCompat="@drawable/map_razvyazka" />
+
+            <TextView
+                android:id="@+id/textSkip6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textRezerv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Резерв"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageRezerv"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                app:srcCompat="@drawable/map_rezerv" />
+
+            <TextView
+                android:id="@+id/textSkip7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textLaboratory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Лаборатория"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageLaboratory"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                app:srcCompat="@drawable/map_laboratory" />
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
